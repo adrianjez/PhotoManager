@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hqapps.photomanager.ui.login.LoginFragment"
+        android:label="Login Fragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_photosFragment"
+            app:popUpTo="@id/photosFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/photosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.hqapps.photomanager.ui.photos_list.PhotosListFragment"
+        android:label="Photos Fragment"
+        tools:layout="@layout/fragment_photos_list" >
+        <action
+            android:id="@+id/action_photosFragment_to_photosGallery"
+            app:destination="@id/photosGallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photosGallery"
+        android:name="com.hqapps.photomanager.ui.photos_gallery.PhotosGalleryFragment"
+        android:label="Photos Fragment"
+        tools:layout="@layout/fragment_photos_gallery" />
+
+</navigation>

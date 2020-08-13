@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Photo Manager</string>
+    <string name="success_message">Success</string>
+    <string name="error_message">Error</string>
+    <string name="login">Login</string>
+    <string name="set_password">Set password</string>
+    <string name="password_requirements">Your password needs to have at least 6 signs"</string>
+    <string name="password_incorrect">Incorrect Password</string>
+    <string name="password">Password</string>
+    <string name="single_photo">Single photo</string>
+    <string name="main_photo">Main photo</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="go_to_gallery">Go to gallery</string>
+    <string name="encrypt_photo">Encrypt photo</string>
+</resources>
